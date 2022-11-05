@@ -35,7 +35,7 @@ public class ClienteController {
     private CatalogoClienteService catalogoClienteService;
 
     @GetMapping
-    public List<Cliente> listar() {
+    public List<Cliente> listar() { //converter para um representation model no futuro RONIE
         return clienteRepository.findAll();
     }
     
